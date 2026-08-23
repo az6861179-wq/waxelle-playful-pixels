@@ -203,13 +203,13 @@
 }
 
 @utility brut {
-  border: 2px solid var(--espresso);
-  box-shadow: 4px 4px 0px var(--espresso);
+  border: 1.5px solid var(--espresso);
+  box-shadow: 3px 3px 0px var(--espresso);
 }
 
 @utility brut-lg {
-  border: 3px solid var(--espresso);
-  box-shadow: 7px 7px 0px var(--espresso);
+  border: 2px solid var(--espresso);
+  box-shadow: 5px 5px 0px var(--espresso);
 }
 
 @utility brut-hover {
@@ -217,20 +217,29 @@
     transform 0.15s ease,
     box-shadow 0.15s ease;
   &:hover {
-    transform: translate(4px, 4px);
-    box-shadow: 0px 0px 0px var(--espresso);
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0px var(--espresso);
+  }
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
   }
 }
 
 @utility brut-bounce {
   transition:
-    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
-    box-shadow 0.2s ease;
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
   &:hover {
-    transform: translateY(-6px) rotate(-1deg);
-    box-shadow: 10px 10px 0px var(--espresso);
+    transform: translateY(-4px) rotate(-1deg);
+    box-shadow: 6px 6px 0px var(--espresso);
+  }
+  &:active {
+    transform: translate(1px, 1px);
+    box-shadow: none;
   }
 }
+
 
 @keyframes waxelle-marquee {
   from {
