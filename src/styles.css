@@ -134,14 +134,15 @@
 
 /* ===== Waxelle craft-pop design system ===== */
 :root {
-  --cream: oklch(0.977 0.021 88);
-  --grid-line: oklch(0.897 0.031 78);
-  --espresso: oklch(0.29 0.055 48);
-  --mustard: oklch(0.751 0.144 76);
-  --mint: oklch(0.804 0.106 187);
-  --coral: oklch(0.675 0.161 39);
-  --blush: oklch(0.902 0.043 20);
+  --cream: oklch(0.98 0.017 88);
+  --grid-line: oklch(0.901 0.03 75.7);
+  --espresso: oklch(0.258 0.019 52.6);
+  --mustard: oklch(0.759 0.146 76);
+  --mint: oklch(0.79 0.103 186.6);
+  --coral: oklch(0.62 0.13 38);
+  --blush: oklch(0.77 0.061 34.1);
   --paper: oklch(1 0 0);
+
 
   --background: var(--cream);
   --foreground: var(--espresso);
