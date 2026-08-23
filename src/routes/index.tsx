@@ -156,7 +156,7 @@ function Index() {
           {[0, 1].map((i) => (
             <span
               key={i}
-              className="px-6 font-display text-sm font-600 tracking-wide text-espresso sm:text-base"
+              className="px-6 font-display text-sm font-semibold tracking-wide text-espresso sm:text-base"
             >
               {`${MARQUEE}   ${MARQUEE}`}
             </span>
@@ -171,7 +171,7 @@ function Index() {
             <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-espresso bg-coral text-lg">
               🔥
             </span>
-            <span className="font-display text-2xl font-700 text-espresso">Waxelle</span>
+            <span className="font-display text-2xl font-bold text-espresso">Waxelle</span>
           </a>
 
           <ul className="order-3 flex w-full flex-wrap justify-center gap-2 md:order-none md:w-auto">
@@ -179,7 +179,7 @@ function Index() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="inline-block rounded-full border-2 border-espresso px-3 py-1.5 text-sm font-600 text-espresso transition-colors hover:bg-mustard"
+                  className="inline-block rounded-full border-2 border-espresso px-3 py-1.5 text-sm font-semibold text-espresso transition-colors hover:bg-mustard"
                 >
                   {item.label}
                 </a>
@@ -190,7 +190,7 @@ function Index() {
           <div className="flex items-center gap-2">
             <a
               href="#collection"
-              className="brut brut-hover rounded-full bg-mint px-4 py-2 font-display text-sm font-600 text-espresso"
+              className="brut brut-hover rounded-full bg-mint px-4 py-2 font-display text-sm font-semibold text-espresso"
             >
               Order Now
             </a>
@@ -200,7 +200,7 @@ function Index() {
               className="brut brut-hover relative rounded-full bg-paper px-3 py-2 text-lg"
             >
               🛍️
-              <span className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full border-2 border-espresso bg-mustard text-xs font-700 text-espresso">
+              <span className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full border-2 border-espresso bg-mustard text-xs font-bold text-espresso">
                 {cart}
               </span>
             </button>
@@ -212,10 +212,10 @@ function Index() {
       <section id="top" className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-20">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <span className="brut inline-block -rotate-2 rounded-full bg-coral px-4 py-1.5 font-display text-sm font-600 text-cream">
+            <span className="brut inline-block -rotate-2 rounded-full bg-coral px-4 py-1.5 font-display text-sm font-semibold text-cream">
               ✨ 100% HANDMADE &amp; CUTE
             </span>
-            <h1 className="mt-6 font-display text-5xl font-700 leading-[0.95] text-espresso sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 font-display text-5xl font-bold leading-[0.95] text-espresso sm:text-6xl lg:text-7xl">
               Life is Better
               <br />
               With{" "}
@@ -234,13 +234,13 @@ function Index() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#collection"
-                className="brut-lg brut-hover rounded-full bg-mustard px-7 py-3.5 font-display text-lg font-600 text-espresso"
+                className="brut-lg brut-hover rounded-full bg-mustard px-7 py-3.5 font-display text-lg font-semibold text-espresso"
               >
                 Explore Menu
               </a>
               <a
                 href="#footer"
-                className="brut-lg brut-hover rounded-full bg-mint px-7 py-3.5 font-display text-lg font-600 text-espresso"
+                className="brut-lg brut-hover rounded-full bg-mint px-7 py-3.5 font-display text-lg font-semibold text-espresso"
               >
                 Custom Order
               </a>
@@ -261,13 +261,13 @@ function Index() {
               </p>
             </div>
             <span
-              className="brut floaty absolute -left-4 top-6 -rotate-6 rounded-full bg-mustard px-3 py-1.5 font-display text-sm font-600 text-espresso"
+              className="brut floaty absolute -left-4 top-6 -rotate-6 rounded-full bg-mustard px-3 py-1.5 font-display text-sm font-semibold text-espresso"
               style={{ ["--tilt" as string]: "-6deg" }}
             >
               Best Seller 🥥
             </span>
             <span
-              className="brut floaty absolute -bottom-4 right-0 rotate-3 rounded-full bg-mint px-3 py-1.5 font-display text-sm font-600 text-espresso"
+              className="brut floaty absolute -bottom-4 right-0 rotate-3 rounded-full bg-mint px-3 py-1.5 font-display text-sm font-semibold text-espresso"
               style={{ ["--tilt" as string]: "3deg", animationDelay: "1s" }}
             >
               Smells Like Heaven!
@@ -279,7 +279,7 @@ function Index() {
       {/* Collection */}
       <section id="collection" className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
         <div className="mb-10 text-center">
-          <h2 className="font-display text-4xl font-700 text-espresso sm:text-5xl">
+          <h2 className="font-display text-4xl font-bold text-espresso sm:text-5xl">
             Pick Your Little Treat
           </h2>
           <svg
@@ -319,20 +319,20 @@ function Index() {
                 />
                 {p.badge && (
                   <span
-                    className={`brut absolute -left-2 -top-3 -rotate-3 rounded-full px-3 py-1 font-display text-xs font-700 tracking-wide ${p.badgeClass}`}
+                    className={`brut absolute -left-2 -top-3 -rotate-3 rounded-full px-3 py-1 font-display text-xs font-bold tracking-wide ${p.badgeClass}`}
                   >
                     {p.badge}
                   </span>
                 )}
-                <span className="brut absolute -bottom-3 right-2 rounded-full bg-paper px-3 py-1 font-display text-sm font-700 text-espresso">
+                <span className="brut absolute -bottom-3 right-2 rounded-full bg-paper px-3 py-1 font-display text-sm font-bold text-espresso">
                   {p.price}
                 </span>
               </div>
-              <h3 className="mt-6 font-display text-xl font-600 text-espresso">{p.name}</h3>
+              <h3 className="mt-6 font-display text-xl font-semibold text-espresso">{p.name}</h3>
               <p className="mt-1 text-sm text-espresso/70">{p.note}</p>
               <button
                 onClick={() => setCart((c) => c + 1)}
-                className="brut brut-hover mt-4 rounded-full bg-espresso px-4 py-2.5 font-display text-sm font-600 text-cream"
+                className="brut brut-hover mt-4 rounded-full bg-espresso px-4 py-2.5 font-display text-sm font-semibold text-cream"
               >
                 Add to Bag 🛍️
               </button>
@@ -347,7 +347,7 @@ function Index() {
         className="border-y-[3px] border-espresso bg-mint px-4 py-14 sm:px-6 lg:py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center font-display text-4xl font-700 text-espresso sm:text-5xl">
+          <h2 className="text-center font-display text-4xl font-bold text-espresso sm:text-5xl">
             How It&apos;s Made 🎨
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-center text-espresso/80">
@@ -360,11 +360,11 @@ function Index() {
                 className="brut rounded-3xl bg-cream p-6"
                 style={{ transform: `rotate(${i === 1 ? 1.5 : i === 0 ? -1.5 : 2}deg)` }}
               >
-                <span className="brut flex h-12 w-12 items-center justify-center rounded-full bg-mustard font-display text-xl font-700 text-espresso">
+                <span className="brut flex h-12 w-12 items-center justify-center rounded-full bg-mustard font-display text-xl font-bold text-espresso">
                   {s.n}
                 </span>
                 <div className="mt-4 text-3xl">{s.emoji}</div>
-                <h3 className="mt-2 font-display text-xl font-600 text-espresso">{s.title}</h3>
+                <h3 className="mt-2 font-display text-xl font-semibold text-espresso">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
               </div>
             ))}
@@ -374,7 +374,7 @@ function Index() {
 
       {/* Reviews */}
       <section id="reviews" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-        <h2 className="text-center font-display text-4xl font-700 text-espresso sm:text-5xl">
+        <h2 className="text-center font-display text-4xl font-bold text-espresso sm:text-5xl">
           Notes From Our People ⭐
         </h2>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -389,7 +389,7 @@ function Index() {
               <blockquote className="mt-3 font-display text-base leading-snug text-espresso">
                 “{r.quote}”
               </blockquote>
-              <figcaption className="mt-4 text-sm font-700 text-espresso/80">— {r.name}</figcaption>
+              <figcaption className="mt-4 text-sm font-bold text-espresso/80">— {r.name}</figcaption>
             </figure>
           ))}
         </div>
@@ -399,12 +399,12 @@ function Index() {
       <section className="mx-auto max-w-6xl px-4 pb-14 sm:px-6 lg:pb-20">
         <div className="brut-lg rounded-3xl bg-paper p-6 sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h2 className="font-display text-3xl font-700 text-espresso">
+            <h2 className="font-display text-3xl font-bold text-espresso">
               📸 @waxelle_candles
             </h2>
             <a
               href="#footer"
-              className="brut brut-hover rounded-full bg-coral px-5 py-2 font-display text-sm font-600 text-cream"
+              className="brut brut-hover rounded-full bg-coral px-5 py-2 font-display text-sm font-semibold text-cream"
             >
               Follow Along
             </a>
@@ -437,7 +437,7 @@ function Index() {
       <footer id="footer" className="border-t-[3px] border-espresso bg-mustard px-4 py-14 sm:px-6">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-4xl font-700 leading-tight text-espresso sm:text-5xl">
+            <h2 className="font-display text-4xl font-bold leading-tight text-espresso sm:text-5xl">
               Get 10% off your
               <br />
               first cozy order 💌
@@ -458,7 +458,7 @@ function Index() {
               />
               <button
                 type="submit"
-                className="shrink-0 rounded-full border-2 border-espresso bg-mint px-5 py-2 font-display text-sm font-600 text-espresso"
+                className="shrink-0 rounded-full border-2 border-espresso bg-mint px-5 py-2 font-display text-sm font-semibold text-espresso"
               >
                 Join ✨
               </button>
@@ -467,20 +467,20 @@ function Index() {
 
           <div className="grid gap-8 sm:grid-cols-2 lg:justify-items-end">
             <div>
-              <h3 className="font-display text-xl font-700 text-espresso">Waxelle by Mahy</h3>
+              <h3 className="font-display text-xl font-bold text-espresso">Waxelle by Mahy</h3>
               <p className="mt-2 max-w-xs text-sm text-espresso/80">
                 Handmade soy wax candles, poured in small batches in Amman, Jordan. Free gift on
                 orders over 20 JOD.
               </p>
             </div>
             <div>
-              <h3 className="font-display text-xl font-700 text-espresso">Say Hi</h3>
+              <h3 className="font-display text-xl font-bold text-espresso">Say Hi</h3>
               <ul className="mt-3 flex flex-wrap gap-2">
                 {["Instagram", "TikTok", "WhatsApp", "Email"].map((s) => (
                   <li key={s}>
                     <a
                       href="#footer"
-                      className="brut brut-hover inline-block rounded-full bg-cream px-4 py-1.5 text-sm font-600 text-espresso"
+                      className="brut brut-hover inline-block rounded-full bg-cream px-4 py-1.5 text-sm font-semibold text-espresso"
                     >
                       {s}
                     </a>
@@ -490,7 +490,7 @@ function Index() {
             </div>
           </div>
         </div>
-        <p className="mx-auto mt-12 max-w-6xl border-t-2 border-espresso pt-5 text-center text-sm font-600 text-espresso/70">
+        <p className="mx-auto mt-12 max-w-6xl border-t-2 border-espresso pt-5 text-center text-sm font-semibold text-espresso/70">
           © {new Date().getFullYear()} Waxelle Candles · Made with wax &amp; love 🕯️
         </p>
       </footer>
